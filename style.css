@@ -2,7 +2,8 @@
 {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    padding: 5px;
+
 }
 .grid-item
 {
@@ -16,4 +17,5 @@
 {
     margin-top: 25px;
     text-align: center;
+    pointer-events: none;
 }
