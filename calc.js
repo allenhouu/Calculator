@@ -53,6 +53,7 @@ function enter()
     try
     {
         document.getElementById("display").value = eval(document.getElementById("display").value);
+        localStorage.setItem(document.getElementById("display").value);
     }
     catch (error)
     {

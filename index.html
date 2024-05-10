@@ -11,87 +11,33 @@
     <meta charset="UTF-8">
     <title>Allen H Calculator</title>
 </head>
-<body class="bg-secondary bg-gradient">
+<body>
 
-<div class="display-box">
-    <input type="text" id="display">
-    <label for="display"></label>
-</div>
-
-<div class="container d-flex justify-content-center">
-    <div class="row">
-        <div class="col">
-            <div class="btn-group">
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <button onclick="displayNum(7)">7</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="displayNum(8)">8</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="displayNum(9)">9</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="displayNum(4)">4</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="displayNum(5)">5</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="displayNum(6)">6</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="displayNum(1)">1</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="displayNum(2)">2</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="displayNum(3)">3</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="clearCalc()">CLEAR</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="backspace()">backspace</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="addition()">+</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="subtraction()">-</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="division()">/</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="multiplication()">*</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="decimal()">.</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="enter()">ENTER</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="sqrt()">√</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="exponent()">^</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="history()">HISTORY</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="openP()">(</button>
-                    </div>
-                    <div class="grid-item">
-                        <button onclick="closeP()">)</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="calculator mx-auto">
+    <input id="display" type="text" readonly>
+    <div class="functions">
+        <button class="btn" onclick="openP()">(</button>
+        <button class="btn" onclick="closeP()">)</button>
+        <button class="btn" onclick="sqrt()">√</button>
+        <button class="btn" onclick="exponent()">^</button>
+        <button class="btn" onclick="displayNum(7)">7</button>
+        <button class="btn" onclick="displayNum(8)">8</button>
+        <button class="btn" onclick="displayNum(9)">9</button>
+        <button class="btn operators" onclick="addition()">+</button>
+        <button class="btn" onclick="displayNum(4)">4</button>
+        <button class="btn" onclick="displayNum(5)">5</button>
+        <button class="btn" onclick="displayNum(6)">6</button>
+        <button class="btn operators" onclick="subtraction()">-</button>
+        <button class="btn" onclick="displayNum(1)">1</button>
+        <button class="btn" onclick="displayNum(2)">2</button>
+        <button class="btn" onclick="displayNum(3)">3</button>
+        <button class="btn operators" onclick="multiplication()">*</button>
+        <button class="btn" onclick="clearCalc()">C</button>
+        <button class="btn" onclick="backspace()">CE</button>
+        <button class="btn" onclick="decimal()">.</button>
+        <button class="btn operators" onclick="division()">/</button>
+        <button class="btn" onclick="enter()">=</button>
+        <button class="btn" onclick="history()">HISTORY</button>
     </div>
 </div>
 
