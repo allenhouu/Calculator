@@ -1,3 +1,5 @@
+let history = [] || JSON.parse(localStorage.getItem("calcHistory"));
+let historyIndex = 0;
 function clearCalc()
 {
     document.getElementById("display").value = "";
@@ -50,17 +52,29 @@ function closeP()
 }
 function enter()
 {
+    let equation = document.getElementById("display").value;
     try
     {
-        document.getElementById("display").value = eval(document.getElementById("display").value);
-        localStorage.setItem(document.getElementById("display").value);
+        let answer = eval(equation);
+        document.getElementById("display").value = answer;
+
+        let entry = `${equation} = ${answer}`;
+        history.push(entry);
+        localStorage.setItem("calcHistory", JSON.stringify(history));
     }
     catch (error)
     {
         document.getElementById("display").value = "n/a";
     }
 }
-function history()
-{
 
+function showHSTRY()
+{
+    if (history.length > 1)
+    {
+        document.getElementById("display").value = history[historyIndex];
+        historyIndex = (history.length + 1) % history.length;
+    }
+    else
+        document.getElementById("display").value = "No history recorded";
 }
