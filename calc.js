@@ -70,10 +70,10 @@ function enter()
 
 function showHSTRY()
 {
-    if (history.length > 1)
+    if (history.length > 0)
     {
         document.getElementById("display").value = history[historyIndex];
-        historyIndex = (history.length + 1) % history.length;
+        historyIndex = (historyIndex + 1) % history.length;
     }
     else
         document.getElementById("display").value = "No history recorded";
