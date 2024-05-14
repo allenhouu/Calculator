@@ -16,6 +16,7 @@
     border: none;
     background-color: #505050;
     font-size: 4rem;
+    margin-botton: 15px;
 }
 
 #functions
@@ -35,11 +36,12 @@
     max-width: 500px;
     border-radius: 15px;
     overflow: hidden;
-    font-family: "Microsoft Sans Serif", serif;
+    font-family: Roboto, serif;
 }
 
 button
 {
+    font-size: 25px;
     font-weight: bold;
     width: 100px;
     height: 100px;
@@ -70,4 +72,62 @@ button:active
 .operators:active
 {
     background-color: rgba(255, 115, 0, 1.00)
+}
+@media screen and (max-width: 823px)
+{
+    #display
+    {
+        font-size: 3.75rem;
+    }
+    button
+    {
+        width: 85px;
+        height: 85px;
+        border-radius: 40px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 703px)
+{
+    #display
+    {
+        font-size: 3.5rem;
+    }
+    button
+    {
+        width: 65px;
+        height: 65px;
+        border-radius: 40px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    #display
+    {
+        font-size: 3.25rem;
+    }
+    button
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 375px)
+{
+    #display
+    {
+        font-size: 3rem;
+    }
+    button
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 15px;
+    }
 }
