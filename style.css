@@ -1,4 +1,4 @@
-.body
+body
 {
     height: 100vh;
     background-color: #000000;
@@ -14,7 +14,7 @@
     height: 70px;
     max-width: 100%;
     border: none;
-    background-color: #505050;
+    background-color: #170052;
     font-size: 3rem;
     text-align: right;
     color: white;
@@ -24,7 +24,7 @@
     margin-botton: 10px;
 }
 
-#functions
+.functions
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -38,14 +38,16 @@
 {
     width: 100%;
     height: 100%;
-    background-color: #2f2f2f;
+    background-color: #04001f;
     text-align: center;
     max-width: 500px;
     border-radius: 0;
     overflow: hidden;
     display: flex;
+    align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+    padding: 10px;
 }
 
 button
@@ -58,35 +60,36 @@ button
     min-height: 60px;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
     border-radius: 10px;
-    background-color: rgba(103, 103, 103, 0.75);
+    background-color: rgba(0, 16, 103, 0.65);
 }
 
 button:hover
 {
-    background-color: rgba(103, 103, 103, 0.90);
+    background-color: rgba(0, 16, 103, 0.8);
 }
 
 button:active
 {
-    background-color: rgba(103, 103, 103, 1.00);
+    background-color: rgba(0, 16, 103, 1.00);
 }
 
 .operators
 {
-    background-color: rgba(255, 115, 0, 0.65);
+    background-color: rgba(67, 55, 148, 0.65);
 }
 
 .operators:hover
 {
-    background-color: rgba(255, 115, 0, 0.80);
+    background-color: rgba(67, 55, 148, 0.80);
 }
 
 .operators:active
 {
-    background-color: rgba(255, 115, 0, 1.00)
+    background-color: rgba(67, 55, 148, 1.00)
 }
 
 @media screen and (max-width: 425px)
